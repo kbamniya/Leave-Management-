@@ -1,0 +1,25 @@
+<form action="/contact/" method="post">
+    {{ form.non_field_errors }}
+    <div class="fieldWrapper">
+        {{ form.leave_refer.errors }}
+        <label for="id_leave_refer">leave_refer:</label>
+        {{ form.leave_refer }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.Refer.errors }}
+        <label for="id_Refer">Refer:</label>
+        {{ form.Refer }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.leave_type.errors }}
+        <label for="leave_type">leave_type:</label>
+        {{ form.leave_type }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.Email.errors }}
+        <label for="id_Email">Email</label>
+        {{ form.Email }}
+    </div>
+	
+    <p><input type="submit" value="Send message" /></p>
+</form>

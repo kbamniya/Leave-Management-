@@ -1,0 +1,12 @@
+<html>
+<body>
+{% extends "base.html" %}
+
+{% block name %}{{ full_name }} is {% endblock %}
+
+{% block content %}
+    <p style="text-align:center;font-family:verdanas;color:red;font-size:20px;">Thanks for visiting on our site . Please <a href='{%url auth_login%}'> visit again</a> .</p>
+{% endblock %}
+
+</body>
+</html>

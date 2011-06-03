@@ -1,0 +1,19 @@
+<html>
+<head> <title>User Login</title> </head>
+<body></br></br>
+<h1 style="text-align:center;font-family:verdanas;color:red;font-size:30px;"><u>Leave Management System</u></h1></br>
+<h2 style="text-align:center;font-family:verdanas;color:green;font-size:20px;">User Login</h2>
+{% if form.errors %}
+<p style="text-align:center">Your username and password didn't match!
+Please try again!</p>
+{% endif %}
+<form method="post" action="." style="text-align:center;font-family:verdanas;color:red;font-size:20px;">
+{% csrf_token %}
+<p> <label for="id_username">Username:</label>{{ form.username }}</p>
+<p><label for="id_password">Password:</label>{{ form.password }}</p>
+<!--input type="hidden" name="next" value="/" /-->
+<input type="submit" value="login" />
+</form>
+</body>
+
+</html>

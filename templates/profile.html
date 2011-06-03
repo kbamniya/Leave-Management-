@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Profile page</title>
+</head>
+<body>
+<p style="font-family:verdanas;color:blue;font-size:13px;"> Welcome, {{ user.username }}. </p>
+
+<form style="font-family:verdanas;color:green;font-size:15px;">
+<h3> User name:     <input type="text" name= "username" value = "{{ user.username }}" ></h3>
+<h3> E-mail:        <input type="text" name= "e-mail" </h3>
+<h3> Leave Refer : <input type="text" name= "username" ></h3>
+<h3> Leava Subject :   <input type="text" name= "username" ></h3>
+<h3> Leava Type :   <input type="text" name= "username" ></h3>
+<input type="submit" value="Submit" />
+<input type="button" value="Reset" /></br></br>
+
+<p><a href='{%url auth_logout%}'>Logout</a></p>
+
+</form>
+
+</body>
+</html>
